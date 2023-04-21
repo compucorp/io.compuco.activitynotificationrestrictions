@@ -1,0 +1,10 @@
+name = Cognito SSO
+description = Single Sign On extended features for Drupal 7 websites.
+core = 7.x
+package = "OAuth2"
+version = 7.x-1.0
+dependencies[] = entity
+dependencies[] = ctools
+dependencies[] = drupal_sso
+dependencies[] = openid_connect
+dependencies[] = xautoload:xautoload
