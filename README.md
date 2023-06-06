@@ -1,0 +1,1 @@
+# "Activity Notification Restrictions" CiviCRM Extension
