@@ -48,7 +48,7 @@ class CRM_Activitynotificationrestrictions_Upgrader_Base {
   public static function instance() {
     if (!self::$instance) {
       self::$instance = new CRM_Activitynotificationrestrictions_Upgrader(
-        'io.compuco.automateddirectdebit',
+        'io.compuco.activitynotificationrestrictions',
         E::path()
       );
     }

@@ -78,3 +78,16 @@ function activitynotificationrestrictions_civicrm_upgrade($op, CRM_Queue_Queue $
 function activitynotificationrestrictions_civicrm_entityTypes(&$entityTypes) {
   _activitynotificationrestrictions_civix_civicrm_entityTypes($entityTypes);
 }
+
+/**
+ * Implements hook_civicrm_buildForm().
+ */
+function activitynotificationrestrictions_civicrm_buildForm($formName, &$form) {
+  if ($formName === 'CRM_Admin_Form_Preferences_Display') {
+    // Adds the HTML markup to the form.
+    $templatePath = realpath(dirname(__FILE__) . "/templates");
+    CRM_Core_Region::instance('page-body')->add([
+      'template' => "{$templatePath}/Settings.tpl",
+    ]);
+  }
+}
